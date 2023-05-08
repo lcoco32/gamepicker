@@ -1,4 +1,5 @@
 import random
+#random game generator
 def pickagame(listofgames):
   temp2 = "yes"
   print(listofgames[random.randint(0,len(listofgames)-1)])
@@ -8,8 +9,8 @@ def pickagame(listofgames):
   else:
     print("your welcome")
 
-
-def main():
+#games input
+def gameinput():
   listofgames = []
   point = 0
 
@@ -28,7 +29,7 @@ def main():
       listofgames.append(temp)
   if ifor != "1":
     return listofgames
-
-listofgame = main()
+#main code
+listofgame = gameinput()
 pickagame(listofgame)
   
